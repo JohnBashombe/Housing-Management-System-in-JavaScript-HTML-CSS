@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> KKIVU </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet">
+    <!-- <link href="css/graph.css" rel="stylesheet"> -->
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/kkivu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- snippet location header -->
+    <div class="icons-svg-sprite"><svg xmlns="http://www.w3.org/2000/svg">
+            <symbol viewBox="0 0 12 8" id="icon-chevron-down">
+                <path
+                    d="M6 6.174l5.313-4.96.23-.214.457.427-.23.214-5.51 5.146L6.03 7 6 6.972 5.97 7l-.23-.214L.23 1.64 0 1.428.458 1l.23.214L6 6.174z"
+                    stroke-linecap="square" fill-rule="evenodd"></path>
+            </symbol>
+
+            <symbol viewBox="0 0 32 32" id="icon-facebook">
+                <path
+                    d="M2.428 0.41c-0.936 0-1.695 0.753-1.695 1.682v27.112c0 0.929 0.759 1.682 1.695 1.682h14.709v-11.802h-4.002v-4.599h4.002v-3.392c0-3.936 2.423-6.080 5.961-6.080 1.695 0 3.152 0.125 3.576 0.181v4.114l-2.454 0.001c-1.924 0-2.297 0.907-2.297 2.239v2.937h4.59l-0.598 4.599h-3.992v11.802h7.826c0.936 0 1.695-0.753 1.695-1.682v-27.112c0-0.929-0.759-1.682-1.695-1.682h-27.321z">
+                </path>
+            </symbol>
+            <symbol viewBox="0 0 32 32" id="icon-instagram">
+                <path
+                    d="M25.522709,13.5369502 C25.7256898,14.3248434 25.8455558,15.1480745 25.8455558,15.9992932 C25.8455558,21.4379334 21.4376507,25.8455558 15.9998586,25.8455558 C10.5623493,25.8455558 6.15416148,21.4379334 6.15416148,15.9992932 C6.15416148,15.1480745 6.27459295,14.3248434 6.4775737,13.5369502 L3.6915357,13.5369502 L3.6915357,27.0764447 C3.6915357,27.7552145 4.24280653,28.3062027 4.92355534,28.3062027 L27.0764447,28.3062027 C27.7571935,28.3062027 28.3084643,27.7552145 28.3084643,27.0764447 L28.3084643,13.5369502 L25.522709,13.5369502 Z M27.0764447,3.6915357 L23.384909,3.6915357 C22.7050083,3.6915357 22.1543028,4.24280653 22.1543028,4.92214183 L22.1543028,8.61509104 C22.1543028,9.29442633 22.7050083,9.84569717 23.384909,9.84569717 L27.0764447,9.84569717 C27.7571935,9.84569717 28.3084643,9.29442633 28.3084643,8.61509104 L28.3084643,4.92214183 C28.3084643,4.24280653 27.7571935,3.6915357 27.0764447,3.6915357 Z M9.84597988,15.9992932 C9.84597988,19.3976659 12.6009206,22.1537374 15.9998586,22.1537374 C19.3987967,22.1537374 22.1543028,19.3976659 22.1543028,15.9992932 C22.1543028,12.6003551 19.3987967,9.84569717 15.9998586,9.84569717 C12.6009206,9.84569717 9.84597988,12.6003551 9.84597988,15.9992932 Z M3.6915357,31.9997173 C1.65296441,31.9997173 0,30.3461875 0,28.3062027 L0,3.6915357 C0,1.6526817 1.65296441,0 3.6915357,0 L28.3084643,0 C30.3473183,0 32,1.6526817 32,3.6915357 L32,28.3062027 C32,30.3461875 30.3473183,31.9997173 28.3084643,31.9997173 L3.6915357,31.9997173 Z"
+                    id="instagram-Imported-Layers" sketch:type="MSShapeGroup"></path>
+            </symbol>
+            <symbol viewBox="0 0 34 32" id="icon-pinterest">
+                <path
+                    d="M1.356 15.647c0 6.24 3.781 11.6 9.192 13.957-0.043-1.064-0.008-2.341 0.267-3.499 0.295-1.237 1.976-8.303 1.976-8.303s-0.491-0.973-0.491-2.411c0-2.258 1.319-3.945 2.962-3.945 1.397 0 2.071 1.041 2.071 2.288 0 1.393-0.895 3.477-1.356 5.408-0.385 1.616 0.817 2.935 2.424 2.935 2.909 0 4.869-3.708 4.869-8.101 0-3.34-2.267-5.839-6.39-5.839-4.658 0-7.56 3.447-7.56 7.297 0 1.328 0.394 2.264 1.012 2.989 0.284 0.333 0.324 0.467 0.221 0.849-0.074 0.28-0.243 0.955-0.313 1.223-0.102 0.386-0.417 0.524-0.769 0.381-2.145-0.869-3.145-3.201-3.145-5.822 0-4.329 3.679-9.519 10.975-9.519 5.863 0 9.721 4.21 9.721 8.729 0 5.978-3.349 10.443-8.285 10.443-1.658 0-3.217-0.889-3.751-1.899 0 0-0.892 3.511-1.080 4.189-0.325 1.175-0.963 2.349-1.546 3.264 1.381 0.405 2.84 0.625 4.352 0.625 8.48 0 15.355-6.822 15.355-15.238s-6.876-15.238-15.355-15.238c-8.48 0-15.356 6.822-15.356 15.238z">
+                </path>
+            </symbol>
+            <symbol viewBox="0 0 43 32" id="icon-twitter">
+                <path
+                    d="M36.575 5.229c1.756-0.952 3.105-2.46 3.74-4.257-1.644 0.882-3.464 1.522-5.402 1.867-1.551-1.495-3.762-2.429-6.209-2.429-4.697 0-8.506 3.445-8.506 7.694 0 0.603 0.075 1.19 0.22 1.753-7.069-0.321-13.337-3.384-17.532-8.039-0.732 1.136-1.152 2.458-1.152 3.868 0 2.669 1.502 5.024 3.784 6.404-1.394-0.040-2.706-0.386-3.853-0.962-0.001 0.032-0.001 0.064-0.001 0.097 0 3.728 2.932 6.837 6.823 7.544-0.714 0.176-1.465 0.27-2.241 0.27-0.548 0-1.081-0.048-1.6-0.138 1.083 3.057 4.224 5.281 7.946 5.343-2.911 2.064-6.579 3.294-10.564 3.294-0.687 0-1.364-0.036-2.029-0.108 3.764 2.183 8.235 3.457 13.039 3.457 15.646 0 24.202-11.724 24.202-21.891 0-0.334-0.008-0.665-0.025-0.995 1.662-1.085 3.104-2.439 4.244-3.982-1.525 0.612-3.165 1.025-4.885 1.211z">
+                </path>
+            </symbol>
+            <symbol viewBox="0 0 32 32" id="icon-youtube">
+                <path
+                    d="M31.6634051,8.8527593 C31.6634051,8.8527593 31.3509198,6.64879843 30.3919217,5.67824658 C29.1757339,4.40441487 27.8125088,4.39809002 27.1873503,4.32353816 C22.7118278,4 15.9983092,4 15.9983092,4 L15.984407,4 C15.984407,4 9.27104501,4 4.79536595,4.32353816 C4.17017613,4.39809002 2.80745205,4.40441487 1.59082583,5.67824658 C0.631890411,6.64879843 0.319843444,8.8527593 0.319843444,8.8527593 C0.319843444,8.8527593 0,11.4409393 0,14.0290881 L0,16.4554834 C0,19.0436008 0.319843444,21.6317495 0.319843444,21.6317495 C0.319843444,21.6317495 0.631890411,23.8357417 1.59082583,24.8062935 C2.80745205,26.0801566 4.40557339,26.0398591 5.11736986,26.1733699 C7.67602348,26.4187241 15.9913894,26.4946536 15.9913894,26.4946536 C15.9913894,26.4946536 22.7118278,26.4845401 27.1873503,26.1610333 C27.8125088,26.0864501 29.1757339,26.0801566 30.3919217,24.8062935 C31.3509198,23.8357417 31.6634051,21.6317495 31.6634051,21.6317495 C31.6634051,21.6317495 31.9827789,19.0436008 31.9827789,16.4554834 L31.9827789,14.0290881 C31.9827789,11.4409393 31.6634051,8.8527593 31.6634051,8.8527593 Z M12.6895342,19.39582 L12.6880626,10.4095186 L21.3299413,14.9183249 L12.6895342,19.39582 Z"
+                    id="youtube-Imported-Layers"></path>
+            </symbol>
+        </svg>
+    </div>
+
+    <header class="header header--fluid" role="banner">
+
+        <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu" aria-controls="menu" aria-expanded="false">
+            <span class="mobileMenu-toggleIcon">Toggle menu</span>
+        </a>
+
+        <div class="emthemesModez-header-userSection emthemesModez-header-userSection--logo-center">
+            <!-- <nav class="navUser navUser--left">
+            </nav> -->
+            <nav class="navUser navUser--right">
+                <ul class="navUser-section navUser-section--alt">
+
+                    <li class="navUser-item">
+                        <a class="navUser-action" href="index.html">
+                            <i class="fas fa-user-plus"></i>
+                        </a>
+                    </li>
+                    <li class="navUser-item navUser-item--cart">
+                        <a class="navUser-action navUser-action--quickSearch" href="#" data-toggle="modal"
+                            data-target="#myModal">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="navUser-item">
+                        <a class="navUser-action" href="index.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1 class="header-logo">
+                <a href="index.html">
+                    <img class="header-logo-image" src="../image/kkivu.png" alt="KKIVU - We do it better"
+                        title="KKIVU - We do it better">
+                </a>
+            </h1>
+        </div>
+
+        <div class="navPages-container" id="menu" data-menu="" aria-hidden="true">
+            <nav class="navPages navPages--align-center">
+                <ul class="navPages-list">
+
+                    <li class="navPages-item">
+                        <a class="navPages-action has-subMenu is-open" data-collapsible="ibanda"
+                            data-collapsible-disabled-breakpoint="large" data-collapsible-disabled-state="open"
+                            data-collapsible-enabled-state="closed" aria-expanded="true" aria-controls="ibanda">
+                            IBANDA
+                            <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                <svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg>
+                            </i>
+                        </a>
+                        <div class="navPage-subMenu is-open" id="ibanda" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="navPages-item">
+                        <a class="navPages-action has-subMenu is-open" href="index.html/clothing/"
+                            data-collapsible="kadutu" data-collapsible-disabled-breakpoint="large"
+                            data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                            aria-expanded="true" aria-controls="kadutu">
+                            KADUTU <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg></i>
+                        </a>
+
+                        <div class="navPage-subMenu is-open" id="kadutu" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="navPages-item">
+
+                        <a class="navPages-action has-subMenu is-open" href="index.html/accessories/shoes/"
+                            data-collapsible="bagira" data-collapsible-disabled-breakpoint="large"
+                            data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                            aria-expanded="true" aria-controls="bagira">
+                            BAGIRA <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg></i>
+                        </a>
+
+                        <div class="navPage-subMenu is-open" id="bagira" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="navPages-item">
+                        <a class="navPages-action has-subMenu is-open" href="index.html/accessories-1/"
+                            data-collapsible="other" data-collapsible-disabled-breakpoint="large"
+                            data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                            aria-expanded="true" aria-controls="other">
+                            OTHER PLACES <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg></i>
+                        </a>
+
+                        <div class="navPage-subMenu is-open" id="other" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="navPages-item">
+                        <a class="navPages-action has-subMenu is-open" href="index.html/collections/"
+                            data-collapsible="education" data-collapsible-disabled-breakpoint="large"
+                            data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                            aria-expanded="true" aria-controls="education">
+                            EDUCATION <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg></i>
+                        </a>
+
+                        <div class="navPage-subMenu is-open" id="education" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="navPages-item">
+                        <a class="navPages-action has-subMenu is-open" href="index.html/sale/" data-collapsible="daily"
+                            data-collapsible-disabled-breakpoint="large" data-collapsible-disabled-state="open"
+                            data-collapsible-enabled-state="closed" aria-expanded="true" aria-controls="daily">
+                            DAILY LIFE <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg></i>
+                        </a>
+
+                        <div class="navPage-subMenu is-open" id="daily" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="navPages-item">
+                        <a class="navPages-action has-subMenu is-open" href="index.html/more/" data-collapsible="more"
+                            data-collapsible-disabled-breakpoint="large" data-collapsible-disabled-state="open"
+                            data-collapsible-enabled-state="closed" aria-expanded="true" aria-controls="more">
+                            MORE <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                    <use xlink:href="#icon-chevron-down"></use>
+                                </svg></i>
+                        </a>
+
+                        <div class="navPage-subMenu is-open" id="more" aria-hidden="false" tabindex="-1">
+                            <ul class="navPage-subMenu-list">
+
+                                <li class="navPage-subMenu-item navPage-subMenu-item--banner-quarter">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        data-collapsible="navPages-vente" data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-vente">
+                                        VENTE MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                            <svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-vente" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-570"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-570">
+                                        LOCATION MAISONS
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-570" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUTES LES
+                                                MAISONS
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-education"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-education">
+                                        EDUCATION
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-education" aria-hidden="false">
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#"> TOUS LES
+                                                CENTRES
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navPage-subMenu-item">
+                                    <a class="navPage-subMenu-action navPages-action has-subMenu is-open"
+                                        href="index.html/clothing/dresses/" data-collapsible="navPages-activity"
+                                        data-collapsible-disabled-breakpoint="medium"
+                                        data-collapsible-disabled-state="open" data-collapsible-enabled-state="closed"
+                                        aria-expanded="true" aria-controls="navPages-activity">
+                                        MORE ACTIVITIES
+                                        <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg>
+                                                <use xlink:href="#icon-chevron-down"></use>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <ul class="navPage-childList is-open" id="navPages-activity" aria-hidden="false">
+
+                                        <li class="navPage-childList-item">
+                                            <a class="navPage-childList-action navPages-action" href="#">KKIVU LINK
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navPages-list navPages-list--user">
+                    <li class="navPages-item">
+                        <a class="navPages-action" href="index.html/login.php">Sign in</a>
+                        or <a class="navPages-action" href="index.html/login.php">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-slide-to="0" class="active"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner img-carousel">
+            <div class="item active">
+                <a href="#">
+                    <img src="../image/building.jpg" alt="img 1" title="Image Carousel">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="../image/building.jpg" alt="img 1" title="Image Carousel">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="../image/building.jpg" alt="img 1" title="Image Carousel">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="../image/building.jpg" alt="img 1" title="Image Carousel">
+                </a>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-muted section-title">
+                    &Agrave; LOUER
+                    <a href="#" class="orange-text"><i class="fas fa-plus-circle right muted-hover"></i></a>
+                </p>
+                <hr class="mt-0">
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            C. IBANDA
+                            <a class="btn-floating waves-effect waves-light blue-grey right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light light-blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            C. IBANDA
+                            <a class="btn-floating waves-effect waves-light blue-grey right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light light-blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            C. IBANDA
+                            <a class="btn-floating waves-effect waves-light blue-grey right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light light-blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            C. IBANDA
+                            <a class="btn-floating waves-effect waves-light blue-grey right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light light-blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-muted section-title">
+                    &Agrave; VENDRE
+                    <a href="#" class="orange-text"><i class="fas fa-plus-circle right muted-hover"></i></a>
+                </p>
+                <hr class="mt-0">
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-muted section-title">
+                    PLUS &Agrave; LOUER
+                    <a href="#" class="orange-text"><i class="fas fa-plus-circle right muted-hover"></i></a>
+                </p>
+                <hr class="mt-0">
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 100</span><span class="card-price-dollar">$</span> <b>/mois</b>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-muted section-title">
+                    PLUS &Agrave; VENDRE
+                    <a href="#" class="orange-text"><i class="fas fa-plus-circle right muted-hover"></i></a>
+                </p>
+                <hr class="mt-0">
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD ITEM -->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- Card Item -->
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="../image/image1.jpg" alt="Nyalukemba" title="Maison A Louer">
+                    </div>
+                    <div class="card-action">
+                        <span class="card-title activator text-darken-4">
+                            EN IBANDA
+                            <a class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </span>
+                        <p class="text-darken-4 mt-20">
+                            <span class="card-price"> 10 000</span><span class="card-price-dollar">$</span>
+                            <i class="fas fa-pen-alt black-text discutable" title="Prix discutable"></i>
+                            <a href="details.html" class="btn-floating waves-effect waves-light blue right">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title text-darken-4 close-padding">
+                            House Location
+                            <i class="fas fa-times right info-hover"></i>
+                        </span>
+                        <p class="brief-description pb-0">
+                            Quartier: Nyalukemba <br>
+                            Avenue: Pesage <br>
+                            No. 343 <br> <br class="hidden-custom-small">
+                            <span class="right">
+                                <i class="fas fa-key green-text"></i>
+                                3 Chambres + 1 Salon
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal" aria-label="Close" title="Close">
+                        <i class="fas fa-times red-hover"></i>
+                    </a>
+                    <h2 class="modal-title" id="myModalLabel">
+                        <i class="fas fa-search-location"></i>
+                    </h2>
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input id="search" type="text" class="autocomplete" placeholder="Search Location">
+                                <button type="button" class="button button--primary btn-block">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h5 class="footer-info-heading">OUR ADDRESS</h5>
+                    <ul class="footer-info-list">
+                        <li><a href="index.html/address">Office Address</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h5 class="footer-info-heading">CONTACT US</h5>
+                    <ul class="footer-info-list">
+                        <li><a href="index.html/contact"> Send Message </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h5 class="footer-info-heading">PRIVACY POLICY</h5>
+                    <ul class="footer-info-list">
+                        <li><a href="index.html/terms"> Rules &amp; Conditions </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h5 class="footer-info-heading"> SOCIAL CONTACT </h5>
+                    <ul class="socialLinks socialLinks--alt">
+                        <li class="socialLinks-item">
+                            <a class="icon icon--instagram" href="https://www.instagram.com/Kkivu/">
+                                <svg>
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socialLinks-item">
+                            <a class="icon icon--twitter" href="https://twitter.com/Kkivu">
+                                <svg>
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socialLinks-item">
+                            <a class="icon icon--facebook" href="https://www.facebook.com/Kkivu/">
+                                <svg>
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socialLinks-item">
+                            <a class="icon icon--youtube" href="https://www.youtube.com/shopdressup">
+                                <svg>
+                                    <use xlink:href="#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="footer-copyright-links footer-copyright-links-list">
+                    <a href="index.html/about/">About Us</a>
+                </div>
+
+                <div class="powered-by">
+                    <b> © <span id="copyright_year"></span> KKIVU – Corporate Company.</b>
+                    <script type="text/javascript">
+                        document.getElementById("copyright_year").innerHTML = new Date().getFullYear();
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bundle.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/materialize.js"></script>
+
+</body>
+
+</html>
